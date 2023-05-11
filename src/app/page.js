@@ -1,6 +1,5 @@
 'use client'
-import FloatingButton from './../components/FloatingButton/FloatingButton';
-import Story from './../components/Story/Story'
+/* import FloatingButton from './../components/FloatingButton/FloatingButton'; */
 import Image, { ImageProps } from 'next/image';
 import AgenciaHispana from '../Images/AgenciaHispana.png';
 import AgenciaHispanaSuit from '../Images/AgenciaHispana-MainPage-Suit.png'
