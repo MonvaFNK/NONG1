@@ -2,9 +2,14 @@
     background-color: var(--fifth-color);
     width: 100%;
     padding: 1rem;
+    font-size:1.3rem;
     &__item{
         margin-left: 2rem;
         margin-right: 2rem;
+        &--texto{
+            font-size: 1.4rem;
+            font-weight: lighter;
+        }
     }
 }
 

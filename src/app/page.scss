@@ -1,8 +1,6 @@
 .mainContainer {
-
     display: flex;
     flex-direction: column;
-    justify-content: top;
     gap: 1rem;
     background-image: url('../Images/AgenciaHispana-MainPhoto.png');
     background-repeat: no-repeat;
@@ -26,17 +24,42 @@
         border-bottom-right-radius: 1.5rem;
     }
 
+    &__titleHeading {
+        line-height: 0.95;
+        text-align: center;
+
+    }
+
     &__title {
+        &--first {
+            -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+        }
+
         font-size: 7vw;
+        font-family: system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
 
         &--text {
-            color: var(--third-color);
+            -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+            /*             color: var(--third-color); */
+            font-family: 'Playfair Display', serif;
         }
     }
 
     &__paragraph {
         font-size: 3.8vw;
         text-align: center;
+
+        -webkit-text-stroke: 1.5px rgb(0, 0, 0);
     }
 
     &__image {
@@ -53,16 +76,23 @@
     &__button {
         box-shadow: 0px 0.2rem var(--fourth-color);
     }
-    &__textBox{
-        &--paragraphTitle{
+
+    &__textBox {
+        &--paragraphTitle {
             font-size: 3vw;
             text-align: center;
+            line-height: 1.1;
         }
-        &--paragraph{
-            
+
+        &--paragraph {
+            font-size: 1.3vw;
 
         }
     }
+}
+
+.servicios {
+    height: 60vh;
 }
 
 .manutencion-1 {
@@ -84,14 +114,56 @@
 .personas-1 {
     fill: black;
 }
-/* .svg__Icons{
-    height:200px;
-}
-.svg__Icons2{
-    height:150px;
+
+/* .expoSection{
+    position:relative;
+    &__bar{
+        position:sticky;
+        top:723px;
+        z-index: 3;
+    }
 } */
+.expo {
+    display: flex;
+    position: relative;
+
+    &__texto {
+        font-size: 3vw;
+        -webkit-text-stroke: 1.1px rgb(0, 0, 0);
+    }
+
+    &__backgroundImage {
+        opacity: 70%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.seeMoreButton {
+    height: 25rem;
+    border-radius: 3rem;
+}
+
+.seeMoreText {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.galindoBio {
+    &__container {
+        &--texto {}
+
+        &--photo {
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+}
+
 .galindoAvatarContainer {
-    display:flex;
+    display: flex;
     justify-items: center;
     align-items: center;
     position: unset;
@@ -106,4 +178,3 @@
     position: relative !important;
     height: unset !important;
 }
-
