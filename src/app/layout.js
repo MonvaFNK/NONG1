@@ -25,3 +25,10 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
+
+/* 
+export const metadata = {
+title: 'Agencia Hispana',
+description: 'Servicios legales de Agencia Hispana.',
+}
+*/
