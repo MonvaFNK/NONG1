@@ -1,0 +1,15 @@
+.footerContainer {
+    background-color: var(--fifth-color);
+    width: 100%;
+    padding: 1rem;
+    &__item{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+.divisor {
+    border: 1px solid black;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}

@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--main-color);
+}
+
+:root {
+    --main-color: #FFF0DA;
+    --secondary-color: #118700;
+    --third-color: #FA2E2D;
+    --fourth-color: #1734BD;
+    --fifth-color: #FFDDA9;
+    --complementary-color: ;
+    --font-color: white;
+    --font-color-secondary: black;
+
+}
+
+.pageContainer {
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}

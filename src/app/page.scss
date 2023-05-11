@@ -1,0 +1,109 @@
+.mainContainer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    gap: 1rem;
+    background-image: url('../Images/AgenciaHispana-MainPhoto.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__topBar {
+        background-color: var(--secondary-color);
+        height: 4rem;
+        width: 100%;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        box-shadow: 0px 1rem red;
+    }
+
+    &__topBarSecondary {
+        background-color: var(--fourth-color);
+        height: 4rem;
+        width: 100%;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+    }
+
+    &__title {
+        font-size: 7vw;
+
+        &--text {
+            color: var(--third-color);
+        }
+    }
+
+    &__paragraph {
+        font-size: 3.8vw;
+        text-align: center;
+    }
+
+    &__image {
+        width: 50%;
+        height: 50vh;
+    }
+
+    &__secondary {
+        &--svg {
+            color: blue;
+        }
+    }
+
+    &__button {
+        box-shadow: 0px 0.2rem var(--fourth-color);
+    }
+    &__textBox{
+        &--paragraphTitle{
+            font-size: 3vw;
+            text-align: center;
+        }
+        &--paragraph{
+            
+
+        }
+    }
+}
+
+.manutencion-1 {
+    fill: none;
+    stroke: black;
+    stroke-miterlimit: 10;
+    stroke-width: 20px;
+
+}
+
+.manutencion-2 {
+    fill: black;
+}
+
+.divorcios-1 {
+    fill: black;
+}
+
+.personas-1 {
+    fill: black;
+}
+/* .svg__Icons{
+    height:200px;
+}
+.svg__Icons2{
+    height:150px;
+} */
+.galindoAvatarContainer {
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    position: unset;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.galindoAvatar {
+    max-width: 40%;
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+

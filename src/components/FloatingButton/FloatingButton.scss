@@ -1,0 +1,17 @@
+.floatingButtonContainer{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 125px;
+    height: 75px;
+    bottom: 0;
+    right: 0;
+    margin: 35px 25px;
+    border-radius: .5rem;
+    z-index: 100;
+    &:hover{
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,193 @@
+.formBody {
+
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-color);
+    height: 100%;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contact {
+    &__container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        max-height: 100%;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(128, 128, 128, 0.363);
+        display: flex;
+        z-index: 9999;
+
+        &--calendly {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    &__submit {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.buttonClose {
+    position: absolute;
+    top: 3%;
+    left: 90%;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60vw;
+    margin: 1rem;
+    background-color: var(--fourth-color);
+    color: var(--font-color-secondary);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    &__TitleContainer {
+        text-align: center;
+        background-color: var(--secondary-color);
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        padding: 1rem;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        &--Title {
+            background-color: var(--secondary-color);
+        }
+    }
+
+    &__LabelContainer {
+        background-color: var(--fifth-color);
+        border-radius: 1rem;
+        padding: 0.5rem;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        width: 70%;
+        height: 100%;
+    }
+
+    &__Label {
+        display: flex;
+        flex-direction: right;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        font-weight: bold;
+
+        &--Input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            color: var(--font-color-primary);
+            background-color: var(--fifth-color);
+            border: none;
+            border-bottom: 1px black solid;
+            border-radius: 0;
+            width: 90%;
+        }
+
+        &--TextArea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            color: var(--font-color-primary);
+            background-color: var(--fifth-color);
+            border: none;
+            border-bottom: 1px black solid;
+            border-radius: 0;
+            resize: none;
+            width: 40%;
+            width: 90%;
+        }
+    }
+
+    &__Button[type="submit"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+
+    &__Button[type="submit"]:hover {
+        background-color: #0062cc;
+    }
+}
+
+
+
+/* 3eab9f0c-f281-46ec-bb16-f5312a5a9af9 */
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    label {
+        display: block;
+        margin: 20px 0;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+
+        input,
+        select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #3e8e41;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        label {
+            font-size: 16px;
+
+            input,
+            select {
+                font-size: 14px;
+            }
+
+            input[type="submit"] {
+                font-size: 16px;
+            }
+        }
+    }
+}
